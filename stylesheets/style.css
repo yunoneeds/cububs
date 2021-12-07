@@ -1,0 +1,127 @@
+body{
+  background: #FFBDBD;
+}
+
+.cub1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example1 4s infinite;
+}
+
+@keyframes example1 {
+  from {background-color: #40293A;}
+  to {background-color: #E8B9DC;}
+}
+
+.cub2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example2 4s infinite;
+}
+
+@keyframes example2 {
+  0%   {background-color: blue;}
+  25%  {background-color: red;}
+  50%  {background-color: yellow;}
+  75% {background-color: green;}
+  100% {background-color: blue;}
+}
+
+.cub3{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: green;
+  animation: example3 4s ease-in-out infinite;
+}
+
+@keyframes example3 {
+  0% {left: 0px; right: 0px;}
+  25% {left: 50px; right: 0px;}
+  50% {left: 0px; right: 0px;}
+  75% {left: -50px; right: 0px;}
+  100% {left: 0px; right: 0px;}
+}
+
+.cub4{
+  width: 100px;
+ height: 100px;
+ background-color: red;
+ position: relative;
+ animation-name: example4;
+ animation-duration: 20s;
+}
+
+@keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.cub5{
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  position: relative;
+  background-color: #DEB2FF;
+  animation: example5 3s linear infinite;
+}
+
+@keyframes example5 {
+  0% {width: 100px; height: 100px;}
+  25% {width: 150px; height: 100px;}
+  50% {width: 100px; height: 50px;}
+  75% {width: 50px; height: 100px;}
+  100% {width: 100px; height: 100px;}
+}
+
+.cub6{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #E5ECFF;
+  animation: example6 5s linear infinite;
+}
+
+@keyframes example6 {
+  0% {transform: rotate(360deg); width: 100px; height: 100px;}
+  25% {transform: rotate(90deg); width: 100px; height: 100px;}
+  50% {transform: rotate(180deg); width: 100px; height: 100px;}
+  75% {transform: rotate(270deg); width: 100px; height: 100px;}
+  100% {transform: rotate(360deg); width: 100px; height: 100px;}
+}
+
+.cub7{
+  width:100px;
+  height: 100px;
+  position: relative;
+  background-color: #7FA1FF;
+  animation: example7 5s cubic-bezier(.17,.85,.78,.62) infinite;
+}
+
+@keyframes example7 {
+  0% {left: 0px; right: 0px;}
+  25% {left: 20px; right: 10px;}
+  50% {left: 0px; right: 0px;}
+  75% {left: -20px; right: 10px;}
+  100% {left: 0px; right: 0px;}
+}
+
+.cub8{
+  width: 100px;
+  height: 100px;
+  background-color: #B8ABFF;
+  animation: example8 4s linear infinite;
+}
+
+@keyframes example8 {
+  0% {width: 100px; height: 100px; opacity: 100%;}
+  25% {width: 125px; height: 100px; opacity: 75%;}
+  50% {width: 150px; height: 100px; opacity: 50%;}
+  75% {width: 175px; height: 100px; opacity: 25%;}
+  100% {width: 200px; height: 100px; opacity: 0%;}
+}
